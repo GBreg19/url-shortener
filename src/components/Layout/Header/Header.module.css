@@ -1,0 +1,125 @@
+.header {
+  align-items: center;
+  color: #9e9aa7;
+  display: flex;
+  font-weight: 700;
+  gap: 40px;
+  margin: 0 auto 70px;
+  max-width: 55%;
+  padding: 50px 20px 0;
+}
+
+.nav {
+  display: flex;
+  flex-grow: 1;
+}
+
+.nav ul {
+  display: flex;
+  flex-grow: 1;
+}
+
+.navBar {
+  align-items: center;
+  gap: 30px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #9e9aa7;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+ul li a:hover {
+  color: #232127;
+}
+
+.login {
+  margin-left: auto;
+}
+
+.signup {
+  background-color: #2acfcf;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 8px 20px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.signup:hover {
+  background-color: #7be4e4;
+  color: #fff;
+}
+
+.iconMenu {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    max-width: 85%;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .header img {
+    align-self: start;
+  }
+
+  .nav {
+    background-color: #3b3054;
+    border-radius: 10px;
+    display: none;
+    left: 5%;
+    right: 5%;
+    padding: 30px;
+    position: absolute;
+    top: 115%;
+    width: 75%;
+  }
+
+  .visible {
+    display: block;
+  }
+
+  .navBar {
+    flex-direction: column;
+    letter-spacing: 1px;
+  }
+
+  .navBar li a {
+    color: #fff;
+  }
+
+  .login {
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid hsla(0, 0%, 50%, 0.5);
+    margin: 0;
+    padding-top: 30px;
+  }
+
+  .signupLi {
+    width: 100%;
+  }
+
+  .signup {
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+  }
+
+  .iconMenu {
+    display: block;
+  }
+}

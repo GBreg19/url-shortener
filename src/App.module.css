@@ -1,0 +1,24 @@
+.main {
+  background-image: url("@assets/illustration-working.svg");
+  background-repeat: no-repeat;
+  background-position: top 0 right 0;
+}
+
+@media (max-width: 1024px) {
+  .main{
+    background-image: none;
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    background-position: top 0 right 120%;
+    background-size: 120%;
+  }
+}
+
+@media (max-width: 425px) {
+  .main {
+    background-position: top 0 right 120%;
+    background-size: 120%;
+  }
+}
